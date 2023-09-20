@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person1 = {
+        name: "parth",
+        age: "19",
+        city: "surat",
+      };
+
+      let person2 = {
+        name: "arjun",
+        age: "91",
+        city: "mahishmati",
+      };
+
+      localStorage.setItem("user", JSON.stringify(person1));
+      localStorage.setItem("user2", JSON.stringify(person2));
+
+      let userData = localStorage.getItem("user");
+
+      console.log(userData);
+    </script>
+  </body>
+</html>
